@@ -1,0 +1,23 @@
+<!-- ng-if -->
+<button (click)="onActionHappen()" class="btn btn-primary">click</button>
+@if(isActionHappen)
+{
+    <div>action happen</div>
+}
+@else{
+    <!-- ngStyle -->
+    <div [ngStyle]="serverStyles">action not happen</div>
+   
+}
+<!--ngClass  -->
+<div [ngClass]="serverClasses">test</div>
+<br>
+@for (item of servers; track item) {
+  <div>{{item}}</div>
+  <br>
+}
+
+@for (item of servers2; track item.id) {
+    <div>{{item.name}}</div>
+    <br>
+}
