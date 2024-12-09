@@ -1,7 +1,56 @@
 <!--
 <app-server></app-server>
 <div>hello</div> -->
-<app-header></app-header>
+<!-- <app-header></app-header>
 <br>
-<app-directives></app-directives>
+<app-directives></app-directives> -->
 
+<div class="container">
+  <div class="col-12">
+    <div>
+        <div>Add Services</div>
+        <br>
+         <div>
+             Service Name
+            <input [(ngModel)]="name" type="text">
+         </div>
+         <br>
+         <div>
+            Description
+           <input [(ngModel)]="description" type="text">
+        </div>
+    </div>
+    <div class="inline">
+        <div>
+            <button (click)="onAddService()" class="btn btn-primary">Add Service</button>
+        </div>
+        <div>
+            <button (click)="onAddCategory()" class="btn btn-success">Add Category</button>
+        </div>
+    </div>
+   <div>
+   
+    <div class="card">
+        <h5 class="card-header">Services</h5>
+        @for (item of services; track item) {
+            <div *ngIf="item.Type=='service'" class="card-body">
+              <h5 class="card-title">{{item.Name}}</h5>
+              <p class="card-text">{{item.Dscription}}</p>
+            </div>
+        }
+      
+    </div>
+    <br>
+    <div class="card">
+        <h5 class="card-header">Category</h5>
+        @for (item of services; track item) {
+            <div *ngIf="item.Type=='category'" class="card-body">
+              <h5 class="card-title">{{item.Name}}</h5>
+              <p class="card-text">{{item.Dscription}}</p>
+            </div>
+        }
+      
+    </div>
+   </div>
+  </div>
+</div>
