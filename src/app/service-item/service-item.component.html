@@ -1,0 +1,21 @@
+<div class="card">
+    <h5 class="card-header">Services</h5>
+    @for (item of services; track item) {
+        <div *ngIf="item.type=='service'" class="card-body">
+          <h5 class="card-title">{{item.name}}</h5>
+          <p class="card-text">{{item.content}}</p>
+        </div>
+    }
+  
+</div>
+<br>
+<div class="card">
+    <h5 class="card-header">Category</h5>
+    @for (item of services; track item) {
+        <div *ngIf="item.type=='category'" class="card-body">
+          <h5 class="card-title">{{item.name}}</h5>
+          <p class="card-text">{{item.content}}</p>
+        </div>
+    }
+  
+</div>

@@ -1,0 +1,18 @@
+@for (item of products; track item) {
+  <app-product
+  [product]="item"
+  >
+  </app-product>
+
+}
+<app-add-product
+(productCreated)="onAddProduct($event)"
+></app-add-product>
+
+<app-add-product2
+(createdProduct)="onAddProduct2($event)"
+>
+ <div>hello100</div>
+</app-add-product2>
+
+

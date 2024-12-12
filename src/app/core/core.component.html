@@ -1,0 +1,21 @@
+<div>
+    <div>Add Services</div>
+    <br>
+     <div>
+         Service Name
+        <input [(ngModel)]="name" type="text">
+     </div>
+     <br>
+     <div>
+        Description
+       <input [(ngModel)]="description" type="text">
+    </div>
+</div>
+<div class="inline">
+    <div>
+        <button (click)="onAddService()" class="btn btn-primary">Add Service</button>
+    </div>
+    <div>
+        <button (click)="onAddCategory()" class="btn btn-success">Add Category</button>
+    </div>
+</div>

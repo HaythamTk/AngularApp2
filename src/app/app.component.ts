@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, Input, input, ViewChild } from '@angular/core';
+import { COURSES } from './Data/db-data';
+import { CardItemComponent } from './card-item/card-item.component';
 
 @Component({
   selector: 'app-root',
@@ -6,26 +8,37 @@ import { Component } from '@angular/core';
   standalone: false,
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit {
   title = 'AgularApp';
-  services:any=[];
-  name:string="";
-  description:string="";
+  services:any=[{"type":"service","name":"service1","content":"lorem ipsum"},
+    {"type":"service","name":"service2","content":"lorem ipsum"}
+  ];
 
-  onAddService()
+  @ViewChild('cardItem') card: CardItemComponent;
+
+  
+  ngAfterViewInit(): void {
+    console.log(this.card);
+
+  }
+
+  courses=COURSES;
+
+  onAddService(serviceData:{serviceName:string,serviceContent:string})
   {
     this.services.push({
-      Name:this.name,
-      Type:"service",
-      Description:this.description
+      name:serviceData.serviceName,
+      type:"service",
+      content:serviceData.serviceContent
     });
   }
-  onAddCategory()
+  onAddCategory(serviceData:{serviceName:string,serviceContent:string})
   {
     this.services.push({
-      Name:this.name,
-      Type:"category",
-      Dscription:this.description
+      name:serviceData.serviceName,
+      type:"category",
+      content:serviceData.serviceContent
     });
   }
+
 }
