@@ -14,6 +14,11 @@ import { ProductsComponent } from './products/products.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { AddProduct2Component } from './add-product2/add-product2.component';
 import { CardItemComponent } from './card-item/card-item.component';
+import { BasicHighlightDirective } from './custome-directives/basic-highlight.directive';
+import { Lesson1Component } from './Documentation/lesson1/lesson1.component';
+import { Lesson2Component } from './Documentation/lesson2/lesson2.component';
+import { TestChildComponent } from './Documentation/test-child/test-child.component';
+import { Test2ChildComponent } from './Documentation/test2-child/test2-child.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +32,12 @@ import { CardItemComponent } from './card-item/card-item.component';
     ProductsComponent,
     AddProductComponent,
     AddProduct2Component,
-    CardItemComponent
+    CardItemComponent,
+    BasicHighlightDirective,
+    Lesson1Component,
+    Lesson2Component,
+    TestChildComponent,
+    Test2ChildComponent
   ],
   imports: [
     BrowserModule,

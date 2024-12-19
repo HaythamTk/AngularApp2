@@ -2,7 +2,10 @@
     <img class="card-img-top" [src]="course.iconUrl" alt="Card image cap">
     <!-- <div class="card-body" [ngClass]="course.category=='INTERMEDIATE' ? 'back-red':''"> -->
    <div class="card-body" [ngClass]="cardClasses()">
-      <h5 class="card-title">{{course.category}}</h5>
+      <h5 appBasicHighlight
+      [defaultColor] = "'white'"
+      [highlightColor] ="'red'"
+      class="card-title">{{course.category}}</h5>
       <p class="card-text">{{course.description}}</p>
       <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>

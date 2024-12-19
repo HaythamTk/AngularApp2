@@ -1,3 +1,9 @@
-.back-red{
-    background-color: red;
+// ::ng-deep .back-red{
+//     background-color: red;
+// }
+
+:host-context(.back-red2)
+{
+    background-color: blue;
+  
 }

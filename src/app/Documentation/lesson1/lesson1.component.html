@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+    <div>
+        <input [(ngModel)]="productName"  type="text">
+        <button (click)="onAddProduct()" class="btn btn-primary">Add Product</button>
+    </div>
+    <div>
+        <br>
+        <div (mouseenter)="onMouseEnter()"
+        (mouseleave)="onMouseLeave()"
+
+        [ngClass]="isHovered ? 'hovered' : ''"
+        >All Products</div>
+        <br>
+        @for (product of products; track product) {
+            <app-test-child
+             [product]="product"
+            >
+            
+           
+        </app-test-child>
+        }
+        @empty {
+            No Data Found
+        }
+       <!-- use it for view child -->
+        <app-test2-child></app-test2-child>
+    </div>
+  </div>
+</div>
+
