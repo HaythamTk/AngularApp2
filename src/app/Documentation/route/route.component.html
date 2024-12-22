@@ -1,0 +1,13 @@
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link " aria-current="page" routerLink="/" routerLinkActive="active">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/products',5]" [queryParams]="{allowEdit:1}" routerLinkActive="active">Products</a>
+    </li>
+    
+  </ul>
+
+  <div>
+     <button (click)="onClick(2)" class="btn btn-primary">click</button>
+  </div>

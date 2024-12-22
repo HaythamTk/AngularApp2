@@ -19,6 +19,7 @@ import { Lesson1Component } from './Documentation/lesson1/lesson1.component';
 import { Lesson2Component } from './Documentation/lesson2/lesson2.component';
 import { TestChildComponent } from './Documentation/test-child/test-child.component';
 import { Test2ChildComponent } from './Documentation/test2-child/test2-child.component';
+import { RouteComponent } from './Documentation/route/route.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { Test2ChildComponent } from './Documentation/test2-child/test2-child.com
     Lesson1Component,
     Lesson2Component,
     TestChildComponent,
-    Test2ChildComponent
+    Test2ChildComponent,
+    RouteComponent
   ],
   imports: [
     BrowserModule,
