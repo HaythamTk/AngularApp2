@@ -20,6 +20,7 @@ import { Lesson2Component } from './Documentation/lesson2/lesson2.component';
 import { TestChildComponent } from './Documentation/test-child/test-child.component';
 import { Test2ChildComponent } from './Documentation/test2-child/test2-child.component';
 import { RouteComponent } from './Documentation/route/route.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { RouteComponent } from './Documentation/route/route.component';
     Lesson2Component,
     TestChildComponent,
     Test2ChildComponent,
-    RouteComponent
+    RouteComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

@@ -16,7 +16,8 @@ export class RouteComponent implements OnInit {
  //navigate to products
  onClick(id:number)
  {
-   this.router.navigate(['/products',id]);
+   this.router.navigate(['/products',id],{relativeTo:this.activatedRoute,queryParamsHandling:'preserve'});
+
  }
 
  ngOnInit()

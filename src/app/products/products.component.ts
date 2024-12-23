@@ -21,7 +21,6 @@ export class ProductsComponent {
    *
    */
  constructor(private router:Router,private activatedRoute:ActivatedRoute) {
-    
   }
   //get data from link
   ngOnInit()
