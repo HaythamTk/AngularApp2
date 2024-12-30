@@ -21,6 +21,8 @@ import { TestChildComponent } from './Documentation/test-child/test-child.compon
 import { Test2ChildComponent } from './Documentation/test2-child/test2-child.component';
 import { RouteComponent } from './Documentation/route/route.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { Observ1Component } from './Documentation/observ1/observ1.component';
+import { Observ2Component } from './Documentation/observ2/observ2.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
     TestChildComponent,
     Test2ChildComponent,
     RouteComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    Observ1Component,
+    Observ2Component
   ],
   imports: [
     BrowserModule,
