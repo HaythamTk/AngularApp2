@@ -23,6 +23,7 @@ import { RouteComponent } from './Documentation/route/route.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { Observ1Component } from './Documentation/observ1/observ1.component';
 import { Observ2Component } from './Documentation/observ2/observ2.component';
+import { TdfComponent } from './Documentation/Forms/tdf/tdf.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { Observ2Component } from './Documentation/observ2/observ2.component';
     RouteComponent,
     NotFoundComponent,
     Observ1Component,
-    Observ2Component
+    Observ2Component,
+    TdfComponent
   ],
   imports: [
     BrowserModule,
